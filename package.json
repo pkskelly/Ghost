@@ -21,7 +21,7 @@
     "clean": "rm -rf ./content/themes/sasquatchcoding && mkdir ./content/themes/sasquatchcoding",
     "copy-theme": "cp -R ~/repos/sasquatchcoding-ghost-theme/dist/* ./content/themes/sasquatchcoding",
     "preinstall": "node core/server/utils/npm/preinstall.js",
-    "prerestart": "npm run clean && npm run copy-theme",
+    "prestart": "npm run clean && npm run copy-theme",
     "start": "node index",
     "test": "grunt validate --verbose"
   },
